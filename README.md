@@ -1,6 +1,11 @@
+# CSS
+
+- CSS naming: https://spaceninja.com/2018/09/17/what-is-modular-css/
+- CSS organization: https://pyx.space/post/keys-to-maintainable-css-order?utm_source=CSS-Weekly&utm_campaign=Issue-336&utm_medium=email
+
 # JS
 
-- Avoid jQuery : http://youmightnotneedjquery.com/
+- Avoid jQuery: http://youmightnotneedjquery.com/
 
 # SSH
 
