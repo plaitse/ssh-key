@@ -1,4 +1,10 @@
-# Create a GitHub SSH key without error
+# JS
+
+- Avoid jQuery : http://youmightnotneedjquery.com/
+
+# SSH
+
+## Create a GitHub SSH key without error
 
 - First, paste the text below, substituting in your GitHub email address:
 ```ssh-keygen -t rsa -b 4096 -C "your_email@example.com"```
