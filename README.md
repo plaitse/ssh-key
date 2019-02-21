@@ -19,7 +19,7 @@ newArray.splice(id, 1);
 is equivalent to:
 
 ```js
-const newArray = state.results.filter(result => result.id !== action.resultElementId);
+const newArray = state.results.filter(result => result.id !== id);
 ```
 
 ## Spread operator
