@@ -8,7 +8,23 @@
 - Avoid jQuery: http://youmightnotneedjquery.com/
 - To format a string with numbers inside to a  real number, we can add a '+' in front of the variable: ```+string_variable```
 
+## Splice and filter
+
+```js
+const id = 2;
+const newArray = [...state.results];
+newArray.splice(id, 1);
+```
+
+is equivalent to:
+
+```js
+const updatedArray = state.results.filter(result => result.id !== action.resultElementId);
+```
+
 ## Spread operator
+
+To keep the state immutable:
 
 ```js
 const newState = Object.assign({}, state);
@@ -16,7 +32,7 @@ newState.counter = state.counter + 1;
 return newState;
 ```
 
-est équivalent à :
+is equivalent to:
 
 ```js
 return {
