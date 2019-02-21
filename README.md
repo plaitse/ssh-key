@@ -10,16 +10,20 @@
 
 ## Spread operator
 
-```const newState = Object.assign({}, state);
+```js
+const newState = Object.assign({}, state);
 newState.counter = state.counter + 1;
-return newState;```
+return newState;
+```
 
 est équivalent à :
 
-```return {
+```js
+return {
   ...state,
   counter: state.counter + 1
-}```
+}
+```
 
 # SSH
 
