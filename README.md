@@ -8,6 +8,19 @@
 - Avoid jQuery: http://youmightnotneedjquery.com/
 - To format a string with numbers inside to a  real number, we can add a '+' in front of the variable: ```+string_variable```
 
+## Spread operator
+
+```const newState = Object.assign({}, state);
+newState.counter = state.counter + 1;
+return newState;```
+
+est équivalent à :
+
+```return {
+  ...state,
+  counter: state.counter + 1
+}```
+
 # SSH
 
 ## Create a GitHub SSH key without error
