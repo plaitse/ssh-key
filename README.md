@@ -116,7 +116,7 @@ Others:
 
 # SASS
 
-Sass is a preprocessor scripting language that is interpreted or compiled into CSS. Sass consists of two syntaxes. It uses indentation to separate code blocks and newline characters to separate rules. The newer syntax, "SCSS" (Sassy CSS), uses block formatting like that of CSS. It uses braces to denote code blocks and semicolons to separate lines within a block. SassScript, the scripting language, provides mechanisms like variables, nesting, mixins, and selector inheritance.
+Sass is a preprocessor scripting language that is interpreted or compiled into CSS. It consists of two syntaxes. First, it uses indentation to separate code blocks and newline characters to separate rules. Second, the newer syntax, "SCSS" (Sassy CSS), uses block formatting like that of CSS. It uses braces to denote code blocks and semicolons to separate lines within a block. SassScript, the scripting language, provides mechanisms like variables, nesting, mixins, and selector inheritance.
 
 # SSH
 
