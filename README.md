@@ -140,3 +140,16 @@ Host *
 ```ssh-add -K ~/.ssh/id_rsa```
 
 - Finaly, add the SSH key to your GitHub account.
+
+# Webpack
+
+Webpack is a JavaScript module bundler capable of transformating, bundling or packaging any resource or asset like JavaScript, HTML, CSS and images if the corresponding plugins are included. It allows a modular approach for the application development.
+
+Famous features:
+- The bundler can be configured using a config file named webpack.config.js.
+- It can take modules with dependencies and generates static assets representing those modules.
+- Loaders allow to write custom tasks that we want to perform when bundling files together.
+- Provides a built in development server called Webpack Dev Server that can be used as a HTTP server for serving our files. 
+- Provides the capability to use Hot module replacement by turning on the hot flag.
+
+Createapp.dev simplifies the process of creating the config file: https://createapp.dev/webpack.
