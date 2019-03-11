@@ -17,7 +17,7 @@ Here are its benefits:
 # JS
 
 - Avoid jQuery: http://youmightnotneedjquery.com/
-- To format a string with numbers inside to a  real number, we can add a '+' in front of the variable: ```+string_variable```
+- To format a string with numbers inside a real number, we can add a '+' in front of the variable: ```+string_variable```
 
 ## Asynchronous
 
