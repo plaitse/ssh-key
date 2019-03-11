@@ -14,6 +14,14 @@ Here are its benefits:
 - Environment Management: Docker makes it easy to maintain different versions of, for example, a website using nginx. You can have a separate container for testing, development, and production on the same Linode and easily deploy to each one.
 - Continuous Integration: Docker works well as part of continuous integration pipelines with tools like Travis, Jenkins, etc. Every time your source code is updated, these tools can save the new version as a Docker image, tag it with a version number and push to Docker Hub, then deploy it to production.
 
+# DOM
+
+The Document Object Model (DOM) is an application programming interface (API) for valid HTML and well-formed XML documents. It defines the logical structure of documents and the way a document is accessed and manipulated. Almost anything found in an HTML or XML document can be accessed, changed, deleted, or added. The DOM originated as a specification to allow JavaScript scripts and Java programs to be portable among Web browsers.
+
+In the DOM, documents have a logical structure which is very much like a tree; to be more precise, which is like a "forest" or "grove", which can contain more than one tree. Each document contains zero or one doctype nodes, one root element node, and zero or more comments or processing instructions; the root element serves as the root of the element tree for the document.
+
+The name "Document Object Model" was chosen because it is an "object model" in the traditional object oriented design sense: documents are modeled using objects, and the model encompasses not only the structure of a document, but also the behavior of a document and the objects of which it is composed. In other words, the nodes in the above diagram do not represent a data structure, they represent objects, which have functions and identity.
+
 # JS
 
 - Avoid jQuery: http://youmightnotneedjquery.com/
@@ -81,6 +89,30 @@ return {
   counter: state.counter + 1
 }
 ```
+
+# Metadata
+
+Meta elements are used to specify page description, keywords, author of the docuent, last modified, etc. This data can be used by browsers (how to display content or reload page), search engines (keywords) or other web services.
+
+Define keywords for search engines:
+```<meta name="keywords" content="HTML, CSS, XML, XHTML, JavaScript">```
+
+Define a description of your web page:
+```<meta name="description" content="Free Web tutorials on HTML and CSS">```
+
+Define the author of a page:
+```<meta name="author" content="John Doe">```
+
+Refresh document every 30 seconds:
+```<meta http-equiv="refresh" content="30">```
+
+Setting the viewport to make your website look good on all devices:
+```<meta name="viewport" content="width=device-width, initial-scale=1.0">```
+
+Others:
+- ```charset```: specifies the character encoding for the HTML document.
+- ```content```: gives the value associated with the http-equiv or name attribute.
+- ```http-equiv```: provides an HTTP header for the information/value of the content attribute.
 
 # SSH
 
