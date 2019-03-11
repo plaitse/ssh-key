@@ -8,6 +8,14 @@
 - Avoid jQuery: http://youmightnotneedjquery.com/
 - To format a string with numbers inside to a  real number, we can add a '+' in front of the variable: ```+string_variable```
 
+## Asynchronous
+
+JavaScript is a single threaded language (aside service workers) so every code is being run as a single JavaScript process in the computer.
+
+For the most part, JavaScript is a synchronous procedural code read from top to bottom. However, it can also run code in an asynchronous way (e.g. setTimeout, callbacks, promises, fetch, ajax, filesystem interaction, database calls, DOM listeners...). This code is set aside in a queue and will be executed after the synchronous one.
+
+![alt text](/asynchronous.jpeg)
+
 ## ```<script>``` tag in HTML
 
 The best practice is to put scripts in the ```<head>``` tag and use the ```async``` or ```defer``` attributes to allow these scripts to be downloaded as soon and as fast as possible without blocking the browser parsing the HTML.
