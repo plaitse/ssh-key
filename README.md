@@ -114,6 +114,10 @@ Others:
 - ```content```: gives the value associated with the http-equiv or name attribute.
 - ```http-equiv```: provides an HTTP header for the information/value of the content attribute.
 
+# SASS
+
+Sass is a preprocessor scripting language that is interpreted or compiled into CSS. Sass consists of two syntaxes. It uses indentation to separate code blocks and newline characters to separate rules. The newer syntax, "SCSS" (Sassy CSS), uses block formatting like that of CSS. It uses braces to denote code blocks and semicolons to separate lines within a block. SassScript, the scripting language, provides mechanisms like variables, nesting, mixins, and selector inheritance.
+
 # SSH
 
 ## Create a GitHub SSH key without error
