@@ -8,6 +8,28 @@
 - Avoid jQuery: http://youmightnotneedjquery.com/
 - To format a string with numbers inside to a  real number, we can add a '+' in front of the variable: ```+string_variable```
 
+## ```<script>``` tag in HTML
+
+The best practice is to put scripts in the ```<head>``` tag and use the async or defer attributes to allow these scripts to be downloaded as soon and as fast as possible without blocking the browser parsing the HTML.
+
+### async
+
+```js
+<script type="text/javascript" src="path/to/script1.js" async></script>
+<script type="text/javascript" src="path/to/script2.js" async></script>
+```
+
+Scripts with the async attribute are executed asynchronously. They are executed as soon as they are downloaded without blocking the browser. Be aware, script 2 could potentially be downloaded and executed before script 1.
+
+### defer
+
+```js
+<script type="text/javascript" src="path/to/script1.js" defer></script>
+<script type="text/javascript" src="path/to/script2.js" defer></script>
+```
+
+Scripts are executed in order and do not block the browser. Unlike async scripts, defer ones are only executed after the entire document has been loaded.
+
 ## Splice and filter
 
 ```js
