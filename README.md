@@ -46,8 +46,8 @@ Many web sites contain HTML code like: ```<div id="nav">``` or ```<div class="he
 
 ```html
 <figure>
-  <img src="pic_trulli.jpg" alt="Trulli">
-  <figcaption>Fig1. - Trulli, Puglia, Italy.</figcaption>
+  <img src="image.jpg" alt="What's the image about">
+  <figcaption>Fig1. - Caption.</figcaption>
 </figure>
 ```
 
@@ -84,7 +84,7 @@ Many web sites contain HTML code like: ```<div id="nav">``` or ```<div class="he
 
 ![alt text](/semantic.png)
 
-![alt text](/semantic2.png)
+![alt text](/semantic2.jpg)
 
 ![alt text](/semantic3.png)
 
