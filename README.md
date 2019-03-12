@@ -101,11 +101,11 @@ For the most part, JavaScript is a synchronous procedural code read from top to 
 
 ![alt text](/asynchronous.jpeg)
 
-# Immutability
+## Immutability
 
 Mutation is anything that changes/transforms the behavior or the structure of an object.
 
-## Pass by value
+### Pass by value
 
 ```js
 let a = 1;
@@ -119,7 +119,7 @@ console.log(a); // 10
 console.log(b); // 1
 ```
 
-## Pass by reference
+### Pass by reference
 
 ```js
 // Objects
@@ -151,7 +151,7 @@ Objects and arrays are usually passed by reference. Since object2 is equated to 
 
 ![alt text](/reference.png)
 
-How is this a problem? Imagine, you pass an object/array across various functions, and you mutate it at some point, the same object/array might be mutated in other places, leading to unexpected behavior in some parts of the code, resulting in bugs.
+This means if you pass an object/array across various functions, and you mutate it at some point, the same object/array might be mutated in other places, leading to unexpected behavior in some parts of the code, resulting in bugs.
 
 One way of achieving immutability in JavaScript is by using Object.assign:
 
