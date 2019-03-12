@@ -101,6 +101,103 @@ For the most part, JavaScript is a synchronous procedural code read from top to 
 
 ![alt text](/asynchronous.jpeg)
 
+# Immutability
+
+Mutation is anything that changes/transforms the behavior or the structure of an object.
+
+## Pass by value
+
+```js
+let a = 1;
+let b = a;
+
+console.log(a); // 1
+console.log(b); // 1
+
+a = 10;
+console.log(a); // 10
+console.log(b); // 1
+```
+
+## Pass by reference
+
+```js
+// Objects
+let object1 = {name: 'test'};
+let object2 = object1;
+
+console.log(object1); // {name: 'test'}
+console.log(object2); // {name: 'test'}
+
+object1.name = 'toast';
+
+console.log(object1); // {name: 'toast'}
+console.log(object2); // {name: 'toast'}
+
+// Arrays
+let arr = [1,2,3,4,5];
+let newArr = arr;
+
+console.log(arr); // [1,2,3,4,5]
+console.log(newArr); // [1,2,3,4,5]
+
+arr.push(6);
+
+console.log(arr); // [1,2,3,4,5,6]
+console.log(newArr); // [1,2,3,4,5,6]
+```
+
+Objects and arrays are usually passed by reference. Since object2 is equated to object1, it is passed by reference, meaning, they both hold the same memory location. So, when we change the value of object1, object2 usually gets changed.
+
+![alt text](/reference.png)
+
+How is this a problem? Imagine, you pass an object/array across various functions, and you mutate it at some point, the same object/array might be mutated in other places, leading to unexpected behavior in some parts of the code, resulting in bugs.
+
+One way of achieving immutability in JavaScript is by using Object.assign:
+
+```js
+let object1 = {name: 'test'};
+let object2 = Object.assign({}, object1, {name: 'toast'});
+
+console.log(object1); // {name: 'test'}
+console.log(object2); // {name: 'toast'}
+
+object1.name = 'trust';
+
+console.log(object1); // {name: 'trust'}
+console.log(object2); // {name: 'toast'}
+```
+
+Another way is by using the spread operator:
+
+```js
+// Objects
+let object1 = {name: 'test'};
+let object2 = {...object1, name: 'toast'};
+
+console.log(object1); // {name: 'test'}
+console.log(object2); // {name: 'toast'}
+
+object1.name = 'trust';
+
+console.log(object1); // {name: 'trust'}
+console.log(object2); // {name: 'toast'}
+
+// Arrays
+let arr = [1,2,3,4,5];
+let newArr = [...arr, 6];
+
+console.log(arr); // [1,2,3,4,5]
+console.log(newArr); // [1,2,3,4,5,6]
+
+arr.push(11);
+
+console.log(arr); // [1,2,3,4,5,11]
+console.log(newArr); // [1,2,3,4,5,6]
+```
+
+Also, for arrays in JavaScript, ```map, filter, reduce``` can be used to avoid mutations since they return new arrays every-time they are called.
+
 ## ```<script>``` tag in HTML
 
 The best practice is to put scripts in the ```<head>``` tag and use the ```async``` or ```defer``` attributes to allow these scripts to be downloaded as soon and as fast as possible without blocking the browser parsing the HTML.
