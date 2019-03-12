@@ -198,6 +198,26 @@ console.log(newArr); // [1,2,3,4,5,6]
 
 Also, for arrays in JavaScript, ```map, filter, reduce``` can be used to avoid mutations since they return new arrays every-time they are called.
 
+## Promise
+
+The promise objet represents the eventual completion (or failure) of an asynchronous operation, and its resulting value.
+
+```js
+var promise1 = new Promise(function(resolve, reject) {
+  setTimeout(function() {
+    resolve('test');
+  }, 300);
+});
+
+promise1.then(function(value) {
+  console.log(value);
+  // expected output: "test"
+});
+
+console.log(promise1);
+// expected output: [object Promise]
+```
+
 ## ```<script>``` tag in HTML
 
 The best practice is to put scripts in the ```<head>``` tag and use the ```async``` or ```defer``` attributes to allow these scripts to be downloaded as soon and as fast as possible without blocking the browser parsing the HTML.
