@@ -32,6 +32,62 @@ In the DOM, documents have a logical structure which is very much like a tree; t
 
 The name "Document Object Model" was chosen because it is an "object model" in the traditional object oriented design sense: documents are modeled using objects, and the model encompasses not only the structure of a document, but also the behavior of a document and the objects of which it is composed. In other words, the nodes in the above diagram do not represent a data structure, they represent objects, which have functions and identity.
 
+# HTML Semantic
+
+Semantic elements make it easier for search engines to identify the correct web page content.
+
+Many web sites contain HTML code like: ```<div id="nav">``` or ```<div class="header">``` to indicate navigation, header, footer, etc. HTML5 offers new semantic elements to define different parts of a web page:
+- ```<article>``` : defines an article.
+- ```<aside>``` : defines content aside from the page content like a sidebar.
+- ```<details>``` : defines additional details that the user can view or hide.
+- ```<em>``` : defines italic text to emphasize it and semantic importance (whereas ```<i>``` text has no importance).
+- ```<figure>``` : specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.
+- ```<figcaption>``` : defines a caption (visual explanation) for a ```<figure>``` element.
+
+```html
+<figure>
+  <img src="pic_trulli.jpg" alt="Trulli">
+  <figcaption>Fig1. - Trulli, Puglia, Italy.</figcaption>
+</figure>
+```
+
+- ```<header>``` and ```<footer>``` : specifies a header and a footer for a document or section.
+- ```<header>``` : specifies a header for a document or section. We can have several ```<header>``` and ```<footer>``` elements in one document.
+
+```html
+<article>
+  <header>
+    <h1>Title of the article</h1>
+    <p>Sub information</p>
+  </header>
+  <p>Body content of the article</p>
+</article>
+```
+
+- ```<main>``` : specifies the main content of a document.
+- ```<mark>``` : specifies marked/highlighted text.
+- ```<nav>``` : defines a set of navigation links.
+
+```html
+<nav>
+  <a href="/html/">HTML</a> |
+  <a href="/css/">CSS</a> |
+  <a href="/js/">JavaScript</a> |
+  <a href="/jquery/">jQuery</a>
+</nav>
+```
+
+- ```<section>``` : defines a section in a document.
+- ```<strong>``` : defines bold text with semantic importance (whereas ```<b>``` text has no importance).
+- ```<summary>``` : defines a visible heading for a ```<details>``` element.
+- ```<time>``` : defines a date/time.
+
+![alt text](/semantic.png)
+
+![alt text](/semantic2.png)
+
+![alt text](/semantic3.png)
+
 # JS
 
 - Avoid jQuery: http://youmightnotneedjquery.com/
