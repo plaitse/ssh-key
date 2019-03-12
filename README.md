@@ -379,6 +379,48 @@ sessionStorage.clear(); // Remove all
 
 Passwords or other sensible information shouldn't be stored on client-side but only on the server's session. The most common thing is store tokkens on the client-side therefore we need the server's session should bet set to expire after a certain amount of time to avoid consuming ressources.
 
+# Testing
+
+Testing should be present all the time, by applying test-driven development.
+
+## Unit testing
+
+Unit testing is the practice of testing small pieces of code, typically individual functions, alone and isolated. If your test uses some external resource, like the network or a database, it’s not a unit test. It should essentially just give the function that’s tested some inputs, and then check what the function outputs is correct.
+
+Tools: Mocha, Jest, Jasmine and Tape.
+
+## Integration testing
+
+The idea is to test how parts of the system work together - the integration of the parts. While unit tests are isolated from other components, integration tests are not. For example, a unit test for database access code would not talk to a real database but an integration test would. One test could be validating a database by querying it to check the state is correct.
+
+Integration tests is more complex than unit ones because they might need some set up or configuration such as the setting up of a test database. Thefore we should only use them if necessary, when a piece of code is too complex to unit test.
+
+Tools: Mocha, Jest, Jasmine and Tape.
+
+## Functional aka E2E aka browser aka acceptance testing
+
+Functional testing is defined as the testing of complete functionality of some application; in practice with web apps, this means using some tool to automate a browser, which is then used to click around on the pages to test the application.
+
+Functional tests should be used for testing common user interactions to test a certain flow in a browser, such as registering an account.
+
+As integration tests, functional ones are complex and should be limited. They also run very slowly because they simulate real user interaction on a web page, so even page load times become a factor.
+
+While in unit and integration tests we would validate the results in code, functional test results should be validated the same way as if we were a user of the page. For instance, we could validate by checking that the browser is redirected to a "thanks for registering page".
+
+Tools: Selenium, Nightwatch, Protactor, PhantomJS and CasperJS.
+
+## TDD
+
+Test-Driven Development is a process for when we write and run tests. Following it makes it possible to have a very high test-coverage which is the percentage of code that is tested automatically.
+
+It consists of the following tests:
+- Start by writing a test.
+- Run the test and any other tests. At this point, the newly added test should fail. If it doesn't fail here, it might not be testing the right thing and thus has a bug in it.
+- Write the minimum amount of code required to make the test pass.
+- Run the tests to check the new test passes.
+- Optionally refactor the code.
+- Repeat from 1.
+
 # Webpack
 
 Webpack is a JavaScript module bundler capable of transformating, bundling or packaging any resource or asset like JavaScript, HTML, CSS and images if the corresponding plugins are included. It allows a modular approach for the application development.
