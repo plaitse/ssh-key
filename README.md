@@ -143,6 +143,8 @@ Host *
 
 # Storage
 
+![alt text](/storage.png)
+
 ## Cookie
 
 Before HTML5, information on the app could only be saved through cookies.
@@ -193,8 +195,6 @@ sessionStorage.clear(); // Remove all
 ## Good practice
 
 Passwords or other sensible information shouldn't be stored on client-side but only on the server's session. The most common thing is store tokkens on the client-side therefore we need the server's session should bet set to expire after a certain amount of time to avoid consuming ressources.
-
-![alt text](/storage.png)
 
 # Webpack
 
