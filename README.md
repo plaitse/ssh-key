@@ -141,6 +141,61 @@ Host *
 
 - Finaly, add the SSH key to your GitHub account.
 
+# Storage
+
+## Cookie
+
+Before HTML5, information on the app could only be saved through cookies.
+
+- Stores data that has to be sent back to the server with subsequent requests. Its expiration varies based on the type and the expiration duration can be set from either server-side or client-side (normally from server-side).
+- Cookies are primarily for server-side reading (can also be read on client-side).
+- Cookies can be made secure by setting the httpOnly flag as true for that cookie. This prevents client-side access to that cookie.
+- Can only store strings.
+- We cannot get one cookie at a time, all the cookies get stored in one string file. As we get them all at once when requested, we need to parse them to target a specific one.
+
+To set, get and remove one:
+```js
+document.cookie = "id=123"; // No experiation date
+document.cookie = "id=123; expires=Fri, 31 Dec 2020 23:59:59 GMT"; // Will expire
+console.log(document.cookie);
+document.cookie = "id=; expires=Fri, 31 Dec 1970 00:00:00 UTC"; // To remove one
+```
+
+## LocalStorage
+
+- Stores data with no expiration date, and gets cleared only through JavaScript, or clearing the Browser cache / Locally Stored Data
+- Can store variables but not arrays neither objects.
+- Can only be read on client-side.
+
+To set, get and remove one:
+```js
+localStorage.setItem('id'; '123');
+console.log(localStorage.getItem('id'));
+localStorage.removeItem('id'); // Remove a single one
+localStorage.clear(); // Remove all
+```
+
+## SessionStorage
+
+- The sessionStorage object stores data only for a session, meaning that the data is stored until the browser (or tab) is closed.
+- Data is never transferred to the server.
+- Can store variables but not arrays neither objects.
+- Can only be read on client-side.
+
+To set, get and remove one:
+```js
+sessionStorage.setItem('id'; '123');
+console.log(sessionStorage.getItem('id'));
+sessionStorage.removeItem('id'); // Remove a single one
+sessionStorage.clear(); // Remove all
+```
+
+## Good practice
+
+Passwords or other sensible information shouldn't be stored on client-side but only on the server's session. The most common thing is store tokkens on the client-side therefore we need the server's session should bet set to expire after a certain amount of time to avoid consuming ressources.
+
+![alt text](/storage.png)
+
 # Webpack
 
 Webpack is a JavaScript module bundler capable of transformating, bundling or packaging any resource or asset like JavaScript, HTML, CSS and images if the corresponding plugins are included. It allows a modular approach for the application development.
