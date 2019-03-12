@@ -6,8 +6,10 @@
 ## Box sizing
 
 By default:
-```width + padding + border = actual width of an element```
-```height + padding + border = actual height of an element```
+```html
+width + padding + border = actual width of an element
+height + padding + border = actual height of an element
+```
 
 The ```box-sizing``` property allows us to include the padding and border in an elemen'ts total width and height instead of the default behavior which will increase the element's size. That way we keep each element the width and height we assigned to them.
 
