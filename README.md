@@ -150,8 +150,8 @@ Host *
 Before HTML5, information on the app could only be saved through cookies.
 
 - Stores data that has to be sent back to the server with subsequent requests. Its expiration varies based on the type and the expiration duration can be set from either server-side or client-side (normally from server-side).
-- Cookies are primarily for server-side reading (can also be read on client-side).
-- Cookies can be made secure by setting the httpOnly flag as true for that cookie. This prevents client-side access to that cookie.
+- Primarily for server-side reading but can also be read on client-side.
+- Can be made secure by setting the httpOnly flag as true for that cookie. This prevents client-side access to that cookie.
 - Can only store strings.
 - We cannot get one cookie at a time, all the cookies get stored in one string file. As we get them all at once when requested, we need to parse them to target a specific one.
 
@@ -179,7 +179,7 @@ localStorage.clear(); // Remove all
 
 ## SessionStorage
 
-- The sessionStorage object stores data only for a session, meaning that the data is stored until the browser (or tab) is closed.
+- Stores data only for a session, meaning that the data is stored until the browser (or tab) is closed.
 - Data is never transferred to the server.
 - Can store variables but not arrays neither objects.
 - Can only be read on client-side.
