@@ -3,6 +3,14 @@
 - CSS naming: https://spaceninja.com/2018/09/17/what-is-modular-css/
 - CSS organization: https://pyx.space/post/keys-to-maintainable-css-order?utm_source=CSS-Weekly&utm_campaign=Issue-336&utm_medium=email
 
+## Box sizing
+
+By default:
+```width + padding + border = actual width of an element```
+```height + padding + border = actual height of an element```
+
+The ```box-sizing``` property allows us to include the padding and border in an elemen'ts total width and height instead of the default behavior which will increase the element's size. That way we keep each element the width and height we assigned to them.
+
 # Docker
 
 Docker is a solution to run software packages called containers which are isolated from each other and bundle their own application, tools, librairies and configuration files. They can communicate with each other through well-defined channels. Containers are created from images that specify their precise contents.
