@@ -32,6 +32,38 @@ In the DOM, documents have a logical structure which is very much like a tree; t
 
 The name "Document Object Model" was chosen because it is an "object model" in the traditional object oriented design sense: documents are modeled using objects, and the model encompasses not only the structure of a document, but also the behavior of a document and the objects of which it is composed. In other words, the nodes in the above diagram do not represent a data structure, they represent objects, which have functions and identity.
 
+# GitHub
+
+## Create a GitHub SSH key without error
+
+- First, paste the text below, substituting in your GitHub email address:
+```ssh-keygen -t rsa -b 4096 -C "your_email@example.com"```
+
+- Then, start the ssh-agent in the background:
+```eval "$(ssh-agent -s)"```
+
+- Then, create or modify your ~/.ssh/config file to automatically load keys into the ssh-agent and store passphrases in your keychain:
+```
+Host *
+  AddKeysToAgent yes
+  UseKeychain yes
+  IdentityFile ~/.ssh/id_rsa
+```
+
+- Then, add your SSH private key to the ssh-agent and store your passphrase in the keychain:
+```ssh-add -K ~/.ssh/id_rsa```
+
+- Finaly, add the SSH key to your GitHub account.
+
+## Language of the repository
+
+If I want my repository to be recognized as a VueJS project by GitHub, I need to set a .gitattributes file at the root of my project which contains:
+
+```js
+* linguist-vendored // Remove every file from GitHub statistics
+*.vue linguist-vendored=false // Keep these files for statistics
+```
+
 # HTML Semantic
 
 Semantic elements make it easier for search engines to identify the correct web page content.
@@ -300,29 +332,6 @@ Others:
 # SASS
 
 Sass is a preprocessor scripting language that is interpreted or compiled into CSS. It consists of two syntaxes. First, it uses indentation to separate code blocks and newline characters to separate rules. Second, the newer syntax, "SCSS" (Sassy CSS), uses block formatting like that of CSS. It uses braces to denote code blocks and semicolons to separate lines within a block. SassScript, the scripting language, provides mechanisms like variables, nesting, mixins, and selector inheritance.
-
-# SSH
-
-## Create a GitHub SSH key without error
-
-- First, paste the text below, substituting in your GitHub email address:
-```ssh-keygen -t rsa -b 4096 -C "your_email@example.com"```
-
-- Then, start the ssh-agent in the background:
-```eval "$(ssh-agent -s)"```
-
-- Then, create or modify your ~/.ssh/config file to automatically load keys into the ssh-agent and store passphrases in your keychain:
-```
-Host *
-  AddKeysToAgent yes
-  UseKeychain yes
-  IdentityFile ~/.ssh/id_rsa
-```
-
-- Then, add your SSH private key to the ssh-agent and store your passphrase in the keychain:
-```ssh-add -K ~/.ssh/id_rsa```
-
-- Finaly, add the SSH key to your GitHub account.
 
 # Storage
 
