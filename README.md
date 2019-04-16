@@ -274,7 +274,7 @@ Scripts are executed in order and do not block the browser. Unlike ```async``` s
 
 ## Rest operator
 
-Takes several values and turn them in on array:
+Takes several values and turns them in on array:
 ```js
 function makeArray(name: string, ...args: number[]) {
   return args;
