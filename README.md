@@ -272,6 +272,16 @@ Scripts with the ```async``` attribute are executed asynchronously. They are exe
 
 Scripts are executed in order and do not block the browser. Unlike ```async``` scripts, defer ones are only executed after the entire document has been loaded.
 
+## Rest operator
+
+Takes several values and turn them in on array:
+```js
+function makeArray(name: string, ...args: number[]) {
+  return args;
+}
+console.log(makeArray("Che", 1, 2, 15)); // [1, 2, 15]
+```
+
 ## Splice and filter
 
 ```js
