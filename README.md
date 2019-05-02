@@ -23,11 +23,26 @@ https://pyx.space/post/keys-to-maintainable-css-order?utm_source=CSS-Weekly&utm_
 Docker is a solution to run software packages called containers which are isolated from each other and bundle their own application, tools, librairies and configuration files. They can communicate with each other through well-defined channels. Containers are created from images that specify their precise contents.
 
 Here are its benefits:
-- Reproducibility: Similar to a Java application, which will run exactly the same on any device capable of running a Java Virtual Machine, a Docker container is guaranteed to be identical on any system that can run Docker. The exact specifications of a container are stored in a Dockerfile. By distributing this file among team members, an organization can guarantee that all images built from the same Dockerfile will function identically.
-- Isolation: Dependencies or settings within a container will not affect any installations or configurations on your computer, or on any other containers that may be running. By using separate containers for each component of an application (for example a web server, front end, and database for hosting a web site), you can avoid conflicting dependencies. You can also have multiple projects on a single server without worrying about creating conflicts on your system.
-- Security: Separating the different components of a large application into different containers can have security benefits: if one container is compromised the others remain unaffected.
-- Environment Management: Docker makes it easy to maintain different versions of, for example, a website using nginx. You can have a separate container for testing, development, and production on the same Linode and easily deploy to each one.
-- Continuous Integration: Docker works well as part of continuous integration pipelines with tools like Travis, Jenkins, etc. Every time your source code is updated, these tools can save the new version as a Docker image, tag it with a version number and push to Docker Hub, then deploy it to production.
+
+## Reproducibility
+
+Similar to a Java application, which will run exactly the same on any device capable of running a Java Virtual Machine, a Docker container is guaranteed to be identical on any system that can run Docker. The exact specifications of a container are stored in a Dockerfile. By distributing this file among team members, an organization can guarantee that all images built from the same Dockerfile will function identically.
+
+## Isolation
+
+Dependencies or settings within a container will not affect any installations or configurations on your computer, or on any other containers that may be running. By using separate containers for each component of an application (for example a web server, front end, and database for hosting a web site), you can avoid conflicting dependencies. You can also have multiple projects on a single server without worrying about creating conflicts on your system.
+
+## Security
+
+Separating the different components of a large application into different containers can have security benefits: if one container is compromised the others remain unaffected.
+
+## Environment Management
+
+Docker makes it easy to maintain different versions of, for example, a website using nginx. You can have a separate container for testing, development, and production on the same Linode and easily deploy to each one.
+
+## Continuous Integration
+
+Docker works well as part of continuous integration pipelines with tools like Travis, Jenkins, etc. Every time your source code is updated, these tools can save the new version as a Docker image, tag it with a version number and push to Docker Hub, then deploy it to production.
 
 # DOM
 
