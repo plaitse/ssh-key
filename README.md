@@ -165,7 +165,7 @@ For the most part, JavaScript is a synchronous procedural code read from top to 
 - main for microservices should be (server.js or server.ts)
 - Avoid enums with numerical values when possible (except for binary flags case) and explicitely assign string values to them
 
-### OOP design
+### OOP Design
 
 - Avoid writing functions with more than 3 parameters, if there is a need for, pass a "context" object with all of those
 - Follow the [SOLID](https://en.wikipedia.org/wiki/SOLID) object oriented design principles, keep your classes and methods as small as possible.
