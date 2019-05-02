@@ -1,5 +1,5 @@
 [CSS](#CSS)
-- [Box Sizing](#Box Sizing)
+- Box Sizing
 - Naming
 - Organization
 - SASS
