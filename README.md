@@ -54,7 +54,7 @@ The name "Document Object Model" was chosen because it is an "object model" in t
 
 # GitHub
 
-## Create a GitHub SSH key without error
+## SSH key
 
 - First, paste the text below, substituting in your GitHub email address:
 ```ssh-keygen -t rsa -b 4096 -C "your_email@example.com"```
