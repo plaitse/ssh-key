@@ -133,6 +133,30 @@ For the most part, JavaScript is a synchronous procedural code read from top to 
 
 ![alt text](/asynchronous.jpeg)
 
+## Conventions
+
+### Naming
+
+- All of the types (classes, enums, interfaces) must follow _PascalCase_ convention
+- Vue (dom) component names must follow _kebab-case_ convention
+- Variables and functions must follow _camelCase_ convention
+- Interfaces names should start with **I** for convenience
+- main for libraries should be (index.js or index.ts)
+- main for microservices should be (server.js or server.ts)
+- Avoid enums with numerical values when possible (except for binary flags case) and explicitely assign string values to them
+
+### OOP design
+
+- Avoid writing functions with more than 3 parameters, if there is a need for, pass a "context" object with all of those
+- Follow the [SOLID](https://en.wikipedia.org/wiki/SOLID) object oriented design principles, keep your classes and methods as small as possible.
+- Keep it simple ! avoid complicated patterns when not necessary
+- Entities destined to be persisted into a storage (Mongo, Couch, Mariadb etc ..) must be modeled as classes with a default values for each property
+- Write comments when needed on classes and identifiers (methods, properties, parameters, contructors)
+
+### Testing
+
+- Do a clear separation between end-to-end/integration testing and unit tests: unit tests don't launch a program, don't do network of file system access. Integration and end-to-end (browser testing) are considered the same. **unit test files must end with .test.ts or (.test.js)** , **end-to-end and integration test files names must end with .e2e.js or .e2e.js** . Keep in mind that those tests will not run in the same Gitlab CI pipeline.
+
 ## Immutability
 
 Mutation is anything that changes/transforms the behavior or the structure of an object.
