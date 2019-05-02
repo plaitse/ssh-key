@@ -175,7 +175,7 @@ For the most part, JavaScript is a synchronous procedural code read from top to 
 
 ### Testing
 
-- Do a clear separation between end-to-end/integration testing and unit tests: unit tests don't launch a program, don't do network of file system access. Integration and end-to-end (browser testing) are considered the same. **unit test files must end with .test.ts or (.test.js)**, **end-to-end and integration test files names must end with .e2e.js or .e2e.js**. Keep in mind that those tests will not run in the same Gitlab CI pipeline.
+- Do a clear separation between end-to-end/integration testing and unit tests: unit tests don't launch a program, don't do network of file system access. Integration and end-to-end (browser testing) are considered the same. **unit test files must end with .test.js**, **end-to-end and integration test files names must end with .e2e.js**. Keep in mind that those tests will not run in the same Gitlab CI pipeline.
 
 ## Immutability
 
