@@ -12,8 +12,9 @@
 - Continuous Integration
 
 [GitHub](#GitHub)
-- SSH Key
+- Deployment strategy
 - Language of the repository
+- SSH key
 
 [HTML](#HTML)
 - DOM
@@ -102,6 +103,29 @@ Docker works well as part of continuous integration pipelines with tools like Tr
 
 # GitHub
 
+## Development strategy
+
+### Monorepo
+
+Mono-repos are a source control pattern where all of the source code is kept in a single repository.
+- Developers can access to everything in one shot easily.
+- Large-scale code refactoring is easier since developers have access to the entire project, refactors can ensure that every piece of the project continues to function after a refactor.
+
+### Multirepo
+
+Multi-repos refers to organizing projects each into their own separate repositories.
+- Rights/acccess to the code can be managed better.
+- Continuous deployment is easier since each repo has its own process.
+
+## Language of the repository
+
+If I want my repository to be recognized as a VueJS project by GitHub, I need to set a .gitattributes file at the root of my project which contains:
+
+```js
+* linguist-vendored // Remove every file from GitHub statistics
+*.vue linguist-vendored=false // Keep these files for statistics
+```
+
 ## SSH key
 
 - First, paste the text below, substituting in your GitHub email address:
@@ -122,15 +146,6 @@ Host *
 ```ssh-add -K ~/.ssh/id_rsa```
 
 - Finaly, add the SSH key to your GitHub account.
-
-## Language of the repository
-
-If I want my repository to be recognized as a VueJS project by GitHub, I need to set a .gitattributes file at the root of my project which contains:
-
-```js
-* linguist-vendored // Remove every file from GitHub statistics
-*.vue linguist-vendored=false // Keep these files for statistics
-```
 
 # HTML
 
