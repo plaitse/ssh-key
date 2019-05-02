@@ -18,6 +18,10 @@ https://spaceninja.com/2018/09/17/what-is-modular-css/
 
 https://pyx.space/post/keys-to-maintainable-css-order?utm_source=CSS-Weekly&utm_campaign=Issue-336&utm_medium=email
 
+## SASS
+
+Sass is a preprocessor scripting language that is interpreted or compiled into CSS. It consists of two syntaxes. First, it uses indentation to separate code blocks and newline characters to separate rules. Second, the newer syntax, "SCSS" (Sassy CSS), uses block formatting like that of CSS. It uses braces to denote code blocks and semicolons to separate lines within a block. SassScript, the scripting language, provides mechanisms like variables, nesting, mixins, and selector inheritance.
+
 # Docker
 
 Docker is a solution to run software packages called containers which are isolated from each other and bundle their own application, tools, librairies and configuration files. They can communicate with each other through well-defined channels. Containers are created from images that specify their precise contents.
@@ -378,10 +382,6 @@ Others:
 - ```charset```: specifies the character encoding for the HTML document.
 - ```content```: gives the value associated with the http-equiv or name attribute.
 - ```http-equiv```: provides an HTTP header for the information/value of the content attribute.
-
-# SASS
-
-Sass is a preprocessor scripting language that is interpreted or compiled into CSS. It consists of two syntaxes. First, it uses indentation to separate code blocks and newline characters to separate rules. Second, the newer syntax, "SCSS" (Sassy CSS), uses block formatting like that of CSS. It uses braces to denote code blocks and semicolons to separate lines within a block. SassScript, the scripting language, provides mechanisms like variables, nesting, mixins, and selector inheritance.
 
 # Storage
 
