@@ -149,13 +149,13 @@ For the most part, JavaScript is a synchronous procedural code read from top to 
 
 - Avoid writing functions with more than 3 parameters, if there is a need for, pass a "context" object with all of those
 - Follow the [SOLID](https://en.wikipedia.org/wiki/SOLID) object oriented design principles, keep your classes and methods as small as possible.
-- Keep it simple ! avoid complicated patterns when not necessary
+- Keep it simple! Avoid complicated patterns when not necessary
 - Entities destined to be persisted into a storage (Mongo, Couch, Mariadb etc ..) must be modeled as classes with a default values for each property
 - Write comments when needed on classes and identifiers (methods, properties, parameters, contructors)
 
 ### Testing
 
-- Do a clear separation between end-to-end/integration testing and unit tests: unit tests don't launch a program, don't do network of file system access. Integration and end-to-end (browser testing) are considered the same. **unit test files must end with .test.ts or (.test.js)** , **end-to-end and integration test files names must end with .e2e.js or .e2e.js** . Keep in mind that those tests will not run in the same Gitlab CI pipeline.
+- Do a clear separation between end-to-end/integration testing and unit tests: unit tests don't launch a program, don't do network of file system access. Integration and end-to-end (browser testing) are considered the same. **unit test files must end with .test.ts or (.test.js)**, **end-to-end and integration test files names must end with .e2e.js or .e2e.js**. Keep in mind that those tests will not run in the same Gitlab CI pipeline.
 
 ## Immutability
 
