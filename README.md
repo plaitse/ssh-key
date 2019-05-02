@@ -48,14 +48,6 @@ Docker makes it easy to maintain different versions of, for example, a website u
 
 Docker works well as part of continuous integration pipelines with tools like Travis, Jenkins, etc. Every time your source code is updated, these tools can save the new version as a Docker image, tag it with a version number and push to Docker Hub, then deploy it to production.
 
-# DOM
-
-The Document Object Model (DOM) is an application programming interface (API) for valid HTML and well-formed XML documents. It defines the logical structure of documents and the way a document is accessed and manipulated. Almost anything found in an HTML or XML document can be accessed, changed, deleted, or added. The DOM originated as a specification to allow JavaScript scripts and Java programs to be portable among Web browsers.
-
-In the DOM, documents have a logical structure which is very much like a tree; to be more precise, which is like a "forest" or "grove", which can contain more than one tree. Each document contains zero or one doctype nodes, one root element node, and zero or more comments or processing instructions; the root element serves as the root of the element tree for the document.
-
-The name "Document Object Model" was chosen because it is an "object model" in the traditional object oriented design sense: documents are modeled using objects, and the model encompasses not only the structure of a document, but also the behavior of a document and the objects of which it is composed. In other words, the nodes in the above diagram do not represent a data structure, they represent objects, which have functions and identity.
-
 # GitHub
 
 ## SSH key
@@ -89,6 +81,14 @@ If I want my repository to be recognized as a VueJS project by GitHub, I need to
 ```
 
 # HTML
+
+## DOM
+
+The Document Object Model (DOM) is an application programming interface (API) for valid HTML and well-formed XML documents. It defines the logical structure of documents and the way a document is accessed and manipulated. Almost anything found in an HTML or XML document can be accessed, changed, deleted, or added. The DOM originated as a specification to allow JavaScript scripts and Java programs to be portable among Web browsers.
+
+In the DOM, documents have a logical structure which is very much like a tree; to be more precise, which is like a "forest" or "grove", which can contain more than one tree. Each document contains zero or one doctype nodes, one root element node, and zero or more comments or processing instructions; the root element serves as the root of the element tree for the document.
+
+The name "Document Object Model" was chosen because it is an "object model" in the traditional object oriented design sense: documents are modeled using objects, and the model encompasses not only the structure of a document, but also the behavior of a document and the objects of which it is composed. In other words, the nodes in the above diagram do not represent a data structure, they represent objects, which have functions and identity.
 
 ## Metadata
 
