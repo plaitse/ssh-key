@@ -50,8 +50,6 @@ JavaScript
 
 ---
 
-Content
-
 # CSS
 
 ## Box sizing
