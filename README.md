@@ -23,9 +23,9 @@ HTML
 JavaScript
 - Asynchronous
 - Conventions
-⋅⋅⋅Naming⋅⋅
-⋅⋅⋅OOP design⋅⋅
-⋅⋅⋅Testing⋅⋅
+ - Naming
+ - OOP design
+ - Testing
 
 - Immutability
 --- Pass by value
