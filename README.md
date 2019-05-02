@@ -28,25 +28,25 @@ JavaScript
   - Testing
 
 - Immutability
---- Pass by value
---- Pass by reference
+  - Pass by value
+  - Pass by reference
 - Promise
 - <script> tag in HTML
---- async
---- defer
+  - async
+  - defer
 - Rest operator
 - Splice and filter
 - Spread operator
 - Storage
---- Cookie
---- LocalStorage
---- SessionStorage
---- Good practice
+  - Cookie
+  - LocalStorage
+  - SessionStorage
+  - Good practice
 - Testing
---- Unit testing
---- Integration testing
---- Functional testing
---- TDD
+  - Unit testing
+  - Integration testing
+  - Functional testing
+  - TDD
 - Webpack
 
 ---
