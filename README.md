@@ -88,7 +88,29 @@ If I want my repository to be recognized as a VueJS project by GitHub, I need to
 *.vue linguist-vendored=false // Keep these files for statistics
 ```
 
-# HTML Semantic
+# HTML
+
+## Metadata
+
+Meta elements are used to specify page description, keywords, author of the document, last modified, etc. This data can be used by browsers (how to display content or reload page), search engines (keywords) or other web services.
+
+- To define keywords for search engines:
+```<meta name="keywords" content="HTML, CSS, XML, XHTML, JavaScript">```
+- To define a description of your web page:
+```<meta name="description" content="Free Web tutorials on HTML and CSS">```
+- To define the author of a page:
+```<meta name="author" content="John Doe">```
+- To refresh document every 30 seconds:
+```<meta http-equiv="refresh" content="30">```
+- To set the viewport to make your website look good on all devices:
+```<meta name="viewport" content="width=device-width, initial-scale=1.0">```
+
+Others:
+- ```charset```: specifies the character encoding for the HTML document.
+- ```content```: gives the value associated with the http-equiv or name attribute.
+- ```http-equiv```: provides an HTTP header for the information/value of the content attribute.
+
+## Semantic
 
 Semantic elements make it easier for search engines to identify the correct web page content.
 
@@ -362,26 +384,6 @@ return {
   counter: state.counter + 1
 }
 ```
-
-# Metadata
-
-Meta elements are used to specify page description, keywords, author of the document, last modified, etc. This data can be used by browsers (how to display content or reload page), search engines (keywords) or other web services.
-
-- To define keywords for search engines:
-```<meta name="keywords" content="HTML, CSS, XML, XHTML, JavaScript">```
-- To define a description of your web page:
-```<meta name="description" content="Free Web tutorials on HTML and CSS">```
-- To define the author of a page:
-```<meta name="author" content="John Doe">```
-- To refresh document every 30 seconds:
-```<meta http-equiv="refresh" content="30">```
-- To set the viewport to make your website look good on all devices:
-```<meta name="viewport" content="width=device-width, initial-scale=1.0">```
-
-Others:
-- ```charset```: specifies the character encoding for the HTML document.
-- ```content```: gives the value associated with the http-equiv or name attribute.
-- ```http-equiv```: provides an HTTP header for the information/value of the content attribute.
 
 # Storage
 
