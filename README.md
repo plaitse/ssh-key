@@ -140,7 +140,7 @@ Many web sites contain HTML code like: ```<div id="nav">``` or ```<div class="he
 
 ![alt text](/semantic3.png)
 
-# JS
+# JavaScript
 
 - Avoid jQuery: http://youmightnotneedjquery.com/
 - To format a string with numbers inside a real number, we can add a '+' in front of the variable: ```+string_variable```
