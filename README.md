@@ -363,19 +363,15 @@ return {
 
 Meta elements are used to specify page description, keywords, author of the document, last modified, etc. This data can be used by browsers (how to display content or reload page), search engines (keywords) or other web services.
 
-To define keywords for search engines:
+- To define keywords for search engines:
 ```<meta name="keywords" content="HTML, CSS, XML, XHTML, JavaScript">```
-
-To define a description of your web page:
+- To define a description of your web page:
 ```<meta name="description" content="Free Web tutorials on HTML and CSS">```
-
-To define the author of a page:
+- To define the author of a page:
 ```<meta name="author" content="John Doe">```
-
-To refresh document every 30 seconds:
+- To refresh document every 30 seconds:
 ```<meta http-equiv="refresh" content="30">```
-
-To set the viewport to make your website look good on all devices:
+- To set the viewport to make your website look good on all devices:
 ```<meta name="viewport" content="width=device-width, initial-scale=1.0">```
 
 Others:
