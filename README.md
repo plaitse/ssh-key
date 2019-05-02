@@ -1,8 +1,5 @@
 # CSS
 
-- CSS naming: https://spaceninja.com/2018/09/17/what-is-modular-css/
-- CSS organization: https://pyx.space/post/keys-to-maintainable-css-order?utm_source=CSS-Weekly&utm_campaign=Issue-336&utm_medium=email
-
 ## Box sizing
 
 By default:
@@ -12,6 +9,14 @@ height + padding + border = actual height of an element
 ```
 
 The ```box-sizing``` property allows us to include the padding and border in an elemen'ts total width and height instead of the default behavior which will increase the element's size. That way we keep each element the width and height we assigned to them.
+
+## Naming
+
+https://spaceninja.com/2018/09/17/what-is-modular-css/
+
+## Organization
+
+https://pyx.space/post/keys-to-maintainable-css-order?utm_source=CSS-Weekly&utm_campaign=Issue-336&utm_medium=email
 
 # Docker
 
