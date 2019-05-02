@@ -12,7 +12,7 @@
 - Continuous Integration
 
 [GitHub](#GitHub)
-- Deployment strategy
+- Development strategy
 - Language of the repository
 - SSH key
 
