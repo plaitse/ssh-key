@@ -1,32 +1,31 @@
 [CSS](#CSS)
-- [Box Sizing](# Box sizing)
+- Box Sizing
 - Naming
 - Organization
 - SASS
 
-Docker
+[Docker](#Docker)
 - Reproducibility
 - Isolation
 - Security
 - Environment Management
 - Continuous Integration
 
-GitHub
+[GitHub](#GitHub)
 - SSH Key
 - Language of the repository
 
-HTML
+[HTML](#HTML)
 - DOM
 - Metadata
 - Semantic
 
-JavaScript
+[JavaScript](#JavaScript)
 - Asynchronous
 - Conventions
   - Naming
   - OOP design
   - Testing
-
 - Immutability
   - Pass by value
   - Pass by reference
