@@ -246,6 +246,15 @@ For the most part, JavaScript is a synchronous procedural code read from top to 
 
 ![alt text](/asynchronous.jpeg)
 
+## Console
+
+Each of the following methods output logs styled differently:
+- `console.dir()`: displays an interactive listing of the properties of a specified JavaScript object. We can examine the contents of child objects.
+- `console.error()`: outputs an error message in red.
+- `console.info()`: outputs an information in blue.
+- `console.log()`: outputs general information.
+- `console.warn()`: outputs a warning message in yellow.
+
 ## Conventions
 
 ### Naming
