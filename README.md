@@ -280,6 +280,16 @@ Each of the following methods output logs styled differently:
 
 - Do a clear separation between end-to-end/integration testing and unit tests: unit tests don't launch a program, don't do network of file system access. Integration and end-to-end (browser testing) are considered the same. **unit test files must end with .test.js**, **end-to-end and integration test files names must end with .e2e.js**. Keep in mind that those tests will not run in the same Gitlab CI pipeline.
 
+## Deep clone/copy
+
+### Only one level
+
+`Object.assign(target, source)` or `{...target}`
+
+### All levels
+
+`JSON.parse(JSON.stringify(target))` or `_.cloneDeep(target)` with lodash.
+
 ## Immutability
 
 Mutation is anything that changes/transforms the behavior or the structure of an object.
