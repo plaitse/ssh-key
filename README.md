@@ -12,6 +12,7 @@
 - Continuous Integration
 
 [GitHub](#GitHub)
+- Conventional commits
 - Development strategy
 - Language of the repository
 - SSH key
@@ -104,6 +105,58 @@ Docker makes it easy to maintain different versions of, for example, a website u
 Docker works well as part of continuous integration pipelines with tools like Travis, Jenkins, etc. Every time your source code is updated, these tools can save the new version as a Docker image, tag it with a version number and push to Docker Hub, then deploy it to production.
 
 # GitHub
+
+## Conventional commits:
+
+Conventional commits are useful for:
+- Automatically generating CHANGELOGs.
+- Automatically determining a semantic version bump based on the types of commits landed.
+- Communicating the nature of changes to teammates, the public, and other stakeholders.
+- Triggering build and publish processes.
+- Making it easier for people to contribute to your projects, by allowing them to explore a more structured commit history.
+
+See all documentation: https://www.conventionalcommits.org/en/v1.0.0-beta.4/
+
+### Types
+
+- `fix` patches a bug in your codebase.
+- `feat` introduces a new feature to the codebase.
+- `BREAKING CHANGE` introduces a breaking API change. It can be part of commits of any type.
+- Others: `chore`, `docs`, `style`, `refactor`, `perf`, `test`, `improvement` can also be used.
+
+### Examples
+
+- Commit message with description and breaking change in body:
+```json
+feat: allow provided config object to extend other configs`
+
+BREAKING CHANGE: `extends` key in config file is now used for extending other config files
+```
+- Commit message with optional ! to draw attention to breaking change:
+```json
+chore!: drop Node 6 from testing matrix
+
+BREAKING CHANGE: dropping Node 6 which hits end of life in April
+```
+- Commit message with no body: `docs: correct spelling of CHANGELOG`
+- Commit message with scope to provide additional contextual information: `feat(lang): add polish language`
+- Commit message for a fix using an (optional) issue number:
+```json
+fix: correct minor typos in code
+
+see the issue for details on the typos fixed
+
+closes issue #12```
+
+### More than one types?
+
+Make multiple commits so each can match one type.
+
+### Relation with SemVer
+
+- Fix type commits should be translated to PATCH releases
+- Feat type commits should be translated to MINOR releases.
+- Commits with BREAKING CHANGE in the commits, regardless of type, should be translated to MAJOR releases.
 
 ## Development strategy
 
