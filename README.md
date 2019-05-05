@@ -28,6 +28,7 @@
   - Naming
   - OOP design
   - Testing
+- Deep clone/copy
 - Immutability
   - Pass by value
   - Pass by reference
