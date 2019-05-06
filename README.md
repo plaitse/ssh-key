@@ -15,6 +15,7 @@
 - Conventional commits
 - Development strategy
 - Language of the repository
+- SemVer
 - SSH key
 
 [HTML](#HTML)
@@ -146,7 +147,8 @@ fix: correct minor typos in code
 
 see the issue for details on the typos fixed
 
-closes issue #12```
+closes issue #12
+```
 
 ### More than one types?
 
