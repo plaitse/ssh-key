@@ -107,7 +107,7 @@ Docker works well as part of continuous integration pipelines with tools like Tr
 
 # GitHub
 
-## Conventional commits:
+## Conventional commits
 
 Conventional commits are useful for:
 - Automatically generating CHANGELOGs.
