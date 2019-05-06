@@ -183,6 +183,33 @@ If I want my repository to be recognized as a VueJS project by GitHub, I need to
 *.vue linguist-vendored=false // Keep these files for statistics
 ```
 
+## SemVer
+
+Given a version number MAJOR.MINOR.PATCH, increment the:
+- MAJOR version when you make incompatible API changes
+- MINOR version when you add functionality in a backwards-compatible manner
+- PATCH version when you make backwards-compatible bug fixes
+
+Once a versioned package has been released, the contents of that version MUST NOT be modified. Any modifications MUST be released as a new version.
+
+See all documentation: https://semver.org/
+
+### Patch
+
+- Patch version Z (x.y.Z | x > 0) MUST be incremented if only backwards compatible bug fixes are introduced. A bug fix is defined as an internal change that fixes incorrect behavior.
+
+### Minor
+
+- In the initial development phase, the simplest thing to do is start your initial development release at 0.1.0 and then increment the minor version for each subsequent release.
+- Minor version Y (x.Y.z | x > 0) MUST be incremented if new, backwards compatible functionality is introduced to the public API. It MUST be incremented if any public API functionality is marked as deprecated. It MAY be incremented if substantial new functionality or improvements are introduced within the private code. It MAY include patch level changes. Patch version MUST be reset to 0 when minor version is incremented.
+- Deprecating existing functionality is a normal part of software development and is often required to make forward progress. When you deprecate part of your public API, you should do two things: (1) update your documentation to let users know about the change, (2) issue a new minor release with the deprecation in place. Before you completely remove the functionality in a new major release there should be at least one minor release that contains the deprecation so that users can smoothly transition to the new API.
+
+### Major
+
+- Major version zero (0.y.z) is for initial development. Anything may change at any time. The public API should not be considered stable.
+- Version 1.0.0 defines the public API. The way in which the version number is incremented after this release is dependent on this public API and how it changes. If your software is being used in production, it should probably already be 1.0.0. If you have a stable API on which users have come to depend, you should be 1.0.0.
+- Major version X (X.y.z | X > 0) MUST be incremented if any backwards incompatible changes are introduced to the public API. It MAY include minor and patch level changes. Patch and minor version MUST be reset to 0 when major version is incremented.
+
 ## SSH key
 
 - First, paste the text below, substituting in your GitHub email address:
