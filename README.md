@@ -207,8 +207,8 @@ See all documentation: https://semver.org/
 ### Major
 
 - Major version zero (0.y.z) is for initial development. Anything may change at any time. The public API should not be considered stable.
-- Version 1.0.0 defines the public API. The way in which the version number is incremented after this release is dependent on this public API and how it changes. If your software is being used in production, it should probably already be 1.0.0. If you have a stable API on which users have come to depend, you should be 1.0.0.
 - Major version X (X.y.z | X > 0) MUST be incremented if any backwards incompatible changes are introduced to the public API. It MAY include minor and patch level changes. Patch and minor version MUST be reset to 0 when major version is incremented.
+- Version 1.0.0 defines the public API. The way in which the version number is incremented after this release is dependent on this public API and how it changes. If your software is being used in production, it should probably already be 1.0.0. If you have a stable API on which users have come to depend, you should be 1.0.0.
 
 ## SSH key
 
