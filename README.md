@@ -15,6 +15,7 @@
 - Conventional commits
 - Development strategy
 - Language of the repository
+- Previous commit
 - SemVer
 - SSH key
 
@@ -182,6 +183,10 @@ If I want my repository to be recognized as a VueJS project by GitHub, I need to
 * linguist-vendored // Remove every file from GitHub statistics
 *.vue linguist-vendored=false // Keep these files for statistics
 ```
+
+## Previous commit
+
+To go back to a previous commit: `git reset --hard id_commit`
 
 ## SemVer
 
